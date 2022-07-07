@@ -75,7 +75,7 @@
             </div>
 
             <div class="phone">
-              <label for="phone"><span class="modal-text-dec">Телефон</span></label>
+              <label for="tel"><span class="modal-text-dec">Телефон</span></label>
               <input type="tel"
               name="tel"
               id="tel">
@@ -88,8 +88,8 @@
               <label for="mail"><span class="modal-text-dec">Почта</span></label>
               <input 
               type="email"
-              name="email"
-              id="email">
+              name="mail"
+              id="mail">
               <svg class="modal-svg" width="18" height="18">
                 <use href="./img/icons.svg#icon-email-form"></use>
               </svg>
@@ -98,21 +98,22 @@
               <div class="comment">
                 <label for="comment"><span class="modal-text-dec">Комментарий</span></label>
                 <textarea 
-                type="text"
                 name="comment" 
                 id="comment"
                 placeholder="Введите текст"></textarea>
               </div>
 
             <div class="checkbox">
-              <input 
-              type="checkbox"
-              name="agreement to the terms"
-              id="agreement to the terms"
-              class="checkbox-icon">
-              <span class="icon"></span>
-              <label for="agreement to the terms"> <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю </span> <a href=""><span class="checkbox-text-link"> 
-               Условия договора</span></a> </label>
+              <label for="agreement-to-the-terms"> 
+                <input 
+                type="checkbox"
+                name="aagreement-to-the-terms"
+                id="agreement-to-the-terms"
+                class="checkbox-icon">
+                <span class="icon"></span><span class="checkbox-text">Соглашаюсь с рассылкой и принимаю </span> <a href=""><span class="checkbox-text-link"> 
+                Условия договора</span></a> </label>
+             
+              
             </div>
             <button class="modal-button" type="submit">Отправить</button>
             </form>
@@ -616,20 +617,22 @@
       </div>
       <div class="subscribe">
         <h3 class="title-footer">Подпишитесь на рассылку</h3>
-        <form class="footer-form"></form>
-        <label class="footer-label" for="mail">
+        <div class="form">
+        <form class="footer-form">
+        <label class="footer-label" for="email">
           <input class="footer-input"
-          type="mail" 
-          id="mail"
-          name="mail"
+          type="email" 
+          id="email"
+          name="email"
           placeholder="E-mail">
-          <button class="subscribe-button" type="subscribe">Подписаться
+        </label>
+          <button class="subscribe-button" type="submit">Подписаться
             <svg class="subscribe-button-svg" width="24" height="24">
               <use href="./img/icons.svg#icon-icon-send"></use>
             </svg>
           </button>
-        </label>
-
+        </form>
+      </div>
       </div>
     </div>
     </div>
